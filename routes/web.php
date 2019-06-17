@@ -12,6 +12,12 @@
 */
 Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function(){
 
+	Route::get('historic', 'BalanceController@historic')->name('admin.historic');
+
+	Route::post('transfer', 'BalanceController@transferStore')->name('transfer.store');
+	Route::post('confirm-transfer', 'BalanceController@confirmTransfer')->name('confirm.transfer');
+	Route::get('transfer', 'BalanceController@transfer')->name('balance.transfer');
+
 	Route::post('withdraw', 'BalanceController@withdrawStore')->name('withdraw.store');
 	Route::get('withdraw', 'BalanceController@withdraw')->name('balance.withdraw');
 
