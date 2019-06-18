@@ -110,6 +110,11 @@ return [
     'menu' => [
         'Menu',
         [
+            'text' => 'Home',
+            'url'  => '/',
+            'icon' => 'home',
+        ],
+        [
             'text'        => 'Dashboard',
             'url'         => 'admin',
             'icon'        => 'dashboard',

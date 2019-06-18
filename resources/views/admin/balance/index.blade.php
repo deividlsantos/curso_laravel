@@ -24,7 +24,7 @@
     	</div>
     	<div class="box-body">
             @include('admin.includes.alerts')
-    		<div class="col-lg-4 col-xs-6">
+    		<div class="col-lg-2 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-green">
             <div class="inner">
@@ -33,7 +33,7 @@
             <div class="icon">
               <i class="ion ion-cash"></i>
             </div>
-            <a href="#" class="small-box-footer">Histórico <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('admin.historic') }}" class="small-box-footer">Histórico <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
     	</div>
