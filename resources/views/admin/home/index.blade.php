@@ -2,10 +2,10 @@
 
 @section('title', 'AdminLTE')
 
-@section('content_header')
-    <h1>Dashboard</h1>
-@stop
-
 @section('content')
-    <p>You are logged in!</p>
+    <div class="form-group">
+		@if (auth()->user()->image != null)
+			<img src="{{ url('storage/users/'.auth()->user()->image) }}" alt="{{ auth()->user()->name }}" style="width: 150px; height: 180px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+		@endif
+	</div>
 @stop

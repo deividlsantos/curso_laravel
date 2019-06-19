@@ -69,7 +69,7 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ route('admin.home') }}">Painel de Usuario</a>
-                        <a href="{{ route('profile') }}">Meu Perfil</a>
+                        <a href="{{ route('profile') }}">Meu Perfil</a>                     
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
